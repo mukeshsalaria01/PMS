@@ -1,0 +1,296 @@
+﻿
+@{
+    ViewData["Title"] = "AddEditGoal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    <link rel="stylesheet" type="text/css" href="/vendors/css/forms/selects/select2.min.css">
+}
+<div class="content-body">
+    <!-- Basic form layout section start -->
+    <section id="basic-form-layouts">
+        <div class="row match-height">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header border-bottom-blue">
+                        <h4 class="card-title" id="basic-layout-form"><i class="la la-pie-chart"></i> Add/Edit Goal-Sheet</h4>
+                        <a class="heading-elements-toggle">
+                            <i class="la la-ellipsis-v font-medium-3"></i>
+                        </a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li>
+                                    <a data-action="collapse">
+                                        <i class="ft-minus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-action="reload">
+                                        <i class="ft-rotate-cw"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-action="expand">
+                                        <i class="ft-maximize"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-action="close">
+                                        <i class="ft-x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-content collapse show">
+                        <div class="card-body">
+                            <form class="form">
+                                <div class="form-body">
+                                    <h4 class="form-section">
+                                        <i class="ft-user"></i> Employee Detail
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="employeesNo">Employee Name</label>
+                                                <br>
+                                                <select class="select2-diacritics form-control" id="select2-diacritics-multi" style="width:100%;">
+                                                    <option>Employee Name</option>
+                                                    <option>Peter</option>
+                                                    <option>Georage</option>
+                                                    <option>Smith</option>
+                                                    <option>De-cock</option>
+                                                    <option>Miller</option>
+                                                    <option>Kane</option>
+                                                    <option>Jack</option>
+                                                    <option>Jill</option>
+                                                    <option>Dill</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="employeesNo">Employee No.</label>
+                                                <input type="text" id="EmployeesNo" class="form-control" name="employeesno">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="employeesGrade">Employee Grade</label>
+                                                <input type="text" id="EmployeesGrade" class="form-control" name="employeeGrade">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Appraisal Period</label>
+                                                <div class='input-group'>
+                                                    <input type='text' class="form-control showdropdowns" />
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">
+                                                            <span class="la la-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="appraisalStatus">Appraisal Status</label>
+                                                <input type="text" id="appraisalStatus" class="form-control" name="appraisalstatus">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="department">Department</label>
+                                                <input type="text" id="department" class="form-control" name="department">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="form-section">
+                                        <i class="la la-user-secret"></i>Appraiser Detail
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="employeesNo">Appraiser Name</label>
+                                                <br>
+                                                <select class="select2-diacritics form-control" id="select2-diacritics-multi" style="width:100%;">
+                                                    <option>Appraiser Name</option>
+                                                    <option>Peter</option>
+                                                    <option>Georage</option>
+                                                    <option>Smith</option>
+                                                    <option>De-cock</option>
+                                                    <option>Miller</option>
+                                                    <option>Kane</option>
+                                                    <option>Jack</option>
+                                                    <option>Jill</option>
+                                                    <option>Dill</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="appraisalDesignation">Appraisar Designation</label>
+                                                <input type="text" id="appraisalDesignation" class="form-control" name="appraisalDesignation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="form-section">
+                                        <i class="la la-user-times"></i>Reviewer Detail
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="appraisalDesignation">Reviewer Name</label>
+                                                <br>
+                                                <select class="select2-diacritics form-control" id="select2-diacritics-multi" style="width:100%;">
+                                                    <option>Reviewer Name</option>
+                                                    <option>Peter</option>
+                                                    <option>Georage</option>
+                                                    <option>Smith</option>
+                                                    <option>De-cock</option>
+                                                    <option>Miller</option>
+                                                    <option>Kane</option>
+                                                    <option>Jack</option>
+                                                    <option>Jill</option>
+                                                    <option>Dill</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="reviewerDesignation">Reviewer Designation</label>
+                                                <input type="text" id="reviewerDesignation" class="form-control" name="reviewerDesignation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="form-section">
+                                    <i class="la la-pie-chart"></i>Goal Detail
+                                </h4>
+                            </form>
+                            <div class="card-content collapse show">
+                                <div class="card-body p-0">
+                                    <!-- row -->
+                                    <div class="mb-1 border-bottom-amber pb-1">
+                                        <div class="row">
+                                            <div class="col-md-4 col-3 text-bold-600">KRA/Goal/Initiative</div>
+                                            <div class="col-md-2 col-3 text-bold-600">MOP</div>
+                                            <div class="col-md-2 col-3 text-bold-600">Weightage (%)</div>
+                                            <div class="col-md-4 col-3 text-bold-600">Guidelines</div>
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+                                    <div class="repeater-default">
+                                        <div data-repeater-list="car">
+                                            <div data-repeater-item>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="form-group mb-1 col-sm-12 col-md-4">
+                                                            <!-- <label for="goal">Goal</label>
+                                                                <br> -->
+                                                            <textarea class="form-control" placeholder="Goal" id="bio" rows="1"></textarea>
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">MOP</label>
+                                                                <br>-->
+                                                            <select class="form-control" id="MOP">
+                                                                <option value="none" selected="" disabled="">Select MOP</option>
+                                                                <option value="Profit">Profit</option>
+                                                                <option value="Timelines">Timelines</option>
+                                                                <option value="Rslacs">Rs lacs</option>
+                                                                <option value="Market Share">Market Share</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">Weightage</label>
+                                                                  <br>-->
+                                                            <input type="number" class="form-control" />
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-4">
+                                                            <!-- <label for="bio" class="cursor-pointer">Guidlines</label>
+                                                                  <br>-->
+                                                            <textarea class="form-control" placeholder="Guidelines" id="bio" rows="1"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <!-- row -->
+                                                    <div class="row">
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">LOP</label>
+                                                                    <br>-->
+                                                            <input type="text" id="reviewerDesignation" class="form-control" placeholder="Level 1" name="reviewerDesignation">
+                                                            <small class="text-muted">Enter <code>Level 1</code> Value</small>
+                                                        </div>
+
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">LOP</label>
+                                                            <br>-->
+                                                            <input type="text" id="reviewerDesignation" class="form-control" placeholder="Level 2" name="reviewerDesignation">
+                                                            <small class="text-muted">Enter <code>Level 2</code> Value</small>
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">LOP</label>
+                                                            <br>-->
+                                                            <input type="text" id="reviewerDesignation" class="form-control" placeholder="Level 3" name="reviewerDesignation">
+                                                            <small class="text-muted">Enter <code>Level 3</code> Value</small>
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-2">
+                                                            <!-- <label for="profession">LOP</label>
+                                                            <br>-->
+                                                            <input type="text" id="reviewerDesignation" class="form-control" placeholder="Level 4" name="reviewerDesignation">
+                                                            <small class="text-muted">Enter <code>Level 4</code> Value</small>
+                                                        </div>
+                                                        <div class="form-group mb-1 col-sm-12 col-md-3">
+                                                            <!-- <label for="profession">LOP</label>
+                                                            <br>-->
+                                                            <input type="text" id="reviewerDesignation" class="form-control" placeholder="Level 5" name="reviewerDesignation">
+                                                            <small class="text-muted">Enter <code>Level 5</code> Value</small>
+                                                        </div>
+
+                                                        <div class="form-group col-sm-12 col-md-1">
+                                                            <button type="button" data-toggle="tooltip" data-placement="top" title="Remove goal" class="btn btn-danger px-2" data-repeater-delete>
+                                                                <i class="ft-x"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /row -->
+                                                </form>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="form-group overflow-hidden">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button data-repeater-create data-toggle="tooltip" data-placement="top" title="Add goal" class="btn btn-primary">
+                                                        <i class="ft-plus"></i> Add
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions float-right mb-2">
+                                <button type="button" class="btn btn-warning mr-1">
+                                    <i class="ft-x"></i> Cancel
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="la la-check-square-o"></i> Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section scripts{
+    <script src="/vendors/js/forms/select/select2.full.min.js" type="text/javascript"></script>
+    <script src="/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
+    <script src="/vendors/js/forms/repeater/jquery.repeater.min.js" type="text/javascript"></script>
+    <script src="/js/scripts/forms/form-repeater.js" type="text/javascript"></script>
+}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Access denied";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<header>
+    @*<h2 class="text-danger">@ViewData["Title"]</h2>*@
+    <h2 class="error-code text-center mb-2">403</h2>
+    <h3 class="text-uppercase text-center">Access Denied/Forbidden !</h3>
+    <div class="row py-2">
+        <div class="col-12">
+            <a asp-action="Index" asp-controller="Dashboard" class="btn btn-primary btn-block btn-lg"><i class="la la-home"></i> Back to Home</a>
+        </div>
+    </div>
+</header>

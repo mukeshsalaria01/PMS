@@ -1,0 +1,37 @@
+﻿@model LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<form asp-action="Login" asp-controller="Account" method="post" class="form-horizontal">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    @Html.AntiForgeryToken()
+    <fieldset class="form-group position-relative has-icon-left">
+        <input asp-for="Email" class="form-control" type="email" id="email" placeholder="Your Email" />
+        <div class="form-control-position">
+            <i class="ft-user"></i>
+        </div>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </fieldset>
+    <fieldset class="form-group position-relative has-icon-left">
+        <input asp-for="Password" class="form-control" id="user-password" placeholder="Enter Password" />
+        <div class="form-control-position">
+            <i class="la la-key"></i>
+        </div>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </fieldset>
+    <div class="form-group row">
+        <div class="col-md-6 col-12 text-center text-sm-left">
+            <fieldset>
+                <input type="checkbox" id="remember-me" class="chk-remember">
+                <label for="remember-me"> Remember Me</label>
+            </fieldset>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-info btn-block"><i class="ft-unlock"></i> Login</button>
+</form>
+@section scripts
+    {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

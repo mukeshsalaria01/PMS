@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <div class="col-md-4 col-10 p-0">
+        <h1 class="text-danger">Error.</h1>
+        <div>
+            <p>An error occurred while processing your request.</p>
+            <p>
+                For assistance, please provide this trace ID when contacting support:
+                @ViewData["TraceIdentifier"]
+            </p>
+        </div>
+        <a asp-controller="Dashboard" asp-action="Index" class="btn btn-xs btn-success">Go back to dashboard</a>
+    </div>
+</div>

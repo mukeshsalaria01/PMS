@@ -1,0 +1,75 @@
+﻿/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* jQuery datatable responsive*/
+
+table.has-columns-hidden > tbody > tr > td > span.responsiveExpander {
+    background: url(/img/plus.png) no-repeat 5px center;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+table.has-columns-hidden > tbody > tr.detail-show > td span.responsiveExpander {
+    background: url(/img/minus.png) no-repeat 5px center;
+}
+
+table.has-columns-hidden > tbody > tr.row-detail > td > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+span.columnTitle {
+    font-weight: 600;
+}
+
+/* datatable*/
+button.cancel.btn.btn-lg.btn-default {
+    color: #fff !important;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 6px solid;
+    border-top-color: #005a9c;
+    border-bottom-color: #005a9c;
+    border-left-color: rgba(0, 90, 156, 0.15);
+    border-right-color: rgba(0, 90, 156, 0.15);
+    -webkit-animation: spinner 0.8s ease-in-out infinite alternate;
+    animation: spinner 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes spinner {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

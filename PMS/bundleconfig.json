@@ -1,0 +1,34 @@
+﻿// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/css/site.css",
+      "wwwroot/css/vendors.css",
+      "wwwroot/css/app.css",
+      "wwwroot/css/core/menu/menu-types/vertical-menu-modern.css",
+      "wwwroot/css/core/colors/palette-gradient.css",
+      "wwwroot/fonts/simple-line-icons/style.css",
+      "wwwroot/css/core/colors/palette-gradient.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/vendors/js/vendors.min.js",
+      "wwwroot/js/core/app-menu.js",
+      "wwwroot/js/core/app.js",
+      "wwwroot/js/scripts/customizer.js",
+      "wwwroot/js/site.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  }
+]

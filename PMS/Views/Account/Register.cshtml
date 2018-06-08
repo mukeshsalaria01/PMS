@@ -1,0 +1,47 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="login">
+    <form asp-action="Register" asp-controller="Account" method="post" class="login__form">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <fieldset class="form-group position-relative has-icon-left">
+            <input asp-for="Email" class="form-control" type="email" id="email" placeholder="Your Email" />
+            <div class="form-control-position">
+                <i class="ft-user"></i>
+            </div>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="form-group position-relative has-icon-left">
+            <input asp-for="Password" class="form-control" id="password" placeholder="Enter Password" />
+            <div class="form-control-position">
+                <i class="la la-key"></i>
+            </div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="form-group position-relative has-icon-left">
+            <input asp-for="ConfirmPassword" class="form-control" id="comfirmPassword" placeholder="Enter Confirm Password" />
+            <div class="form-control-position">
+                <i class="la la-key"></i>
+            </div>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="form-group position-relative has-icon-left">
+            <select asp-for="RoleId" asp-items="@Model.Roles" class="form-control">
+                <option>Please select</option>
+            </select>
+            @*<div class="form-control-position">
+                <i class="la la-key"></i>
+            </div>*@
+            <span asp-validation-for="RoleId" class="text-danger"></span>
+        </fieldset>
+        <button type="submit" class="btn btn-info btn-lg btn-block"><i class="ft-user"></i> Register</button>
+    </form>
+</div>
+@section scripts
+    {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

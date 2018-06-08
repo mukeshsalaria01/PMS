@@ -1,0 +1,16 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.2.1",
+    "jquery-validation": "1.17.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "bootstrap-sweetalert": "",
+    //"font-awesome": "^4.7.0",
+    "select2": "~4.0",
+    "blockUI": "",
+    "dropzone": "5.4.0"
+    //"jquery-ui": "1.10.4"
+  }
+}
