@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PMS.Core.Models;
+using PMS.Web.UI.Core.Models;
 
 namespace PMS.Infrastructure
 {

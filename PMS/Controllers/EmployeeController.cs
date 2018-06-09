@@ -4,11 +4,11 @@ using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using PMS.Core.Interfaces;
-using PMS.Core.Models;
-using PureSmiles.ViewModels;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.Core.Models;
+using PMS.Web.UI.ViewModels;
 
-namespace PMS.Controllers
+namespace PMS.Web.UI.Controllers
 {
     [Authorize]
     public class EmployeeController : Controller

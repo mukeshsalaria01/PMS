@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PMS.Core.Models;
+using PMS.Web.UI.Core.Models;
 
-namespace PMS.Core.Interfaces
+namespace PMS.Web.UI.Core.Interfaces
 {
     public interface IEmployeeRepository
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using PMS.Core.Interfaces;
 using PMS.Infrastructure;
-using PMS.ViewModels;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.ViewModels;
 
 namespace PMS.Infrastructure
 {

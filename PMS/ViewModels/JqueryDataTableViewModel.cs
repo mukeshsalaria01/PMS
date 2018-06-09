@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PureSmiles.ViewModels
+﻿namespace PMS.Web.UI.ViewModels
 {
     public class JqueryDataTableViewModel
     {

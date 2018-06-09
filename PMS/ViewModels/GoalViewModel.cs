@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PMS.ViewModels
+namespace PMS.Web.UI.ViewModels
 {
     public class GoalViewModel
     {

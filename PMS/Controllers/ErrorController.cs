@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PMS.Controllers
+namespace PMS.Web.UI.Controllers
 {
     public class ErrorController : Controller
     {

@@ -2,9 +2,8 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace PMS.Core.Models
+namespace PMS.Web.UI.Core.Models
 {
     public class Employee
     {

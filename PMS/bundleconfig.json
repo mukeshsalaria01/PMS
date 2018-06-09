@@ -6,8 +6,13 @@
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
       "wwwroot/css/site.css",
-      "wwwroot/css/vendors.css",
-      "wwwroot/css/app.css",
+      //"wwwroot/css/bootstrap.css",
+      //"wwwroot/fonts/feather/style.min.css",
+      //"wwwroot/fonts/flag-icon-css/css/flag-icon.min.css",
+      //"wwwroot/vendors/css/extensions/pace.css",
+      //"wwwroot/css/bootstrap-extended.css",
+      //"wwwroot/css/colors.css",
+      //"wwwroot/css/components.css",
       "wwwroot/css/core/menu/menu-types/vertical-menu-modern.css",
       "wwwroot/css/core/colors/palette-gradient.css",
       "wwwroot/fonts/simple-line-icons/style.css",

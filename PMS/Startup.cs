@@ -4,14 +4,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PMS.Core.Interfaces;
-using PMS.Core.Models;
 using PMS.Infrastructure;
-using PMS.Services;
-using PMS.ViewModels;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.Core.Models;
+using PMS.Web.UI.ViewModels;
 using PureSmiles.Services;
 
-namespace PMS
+namespace PMS.Web.UI
 {
     public class Startup
     {

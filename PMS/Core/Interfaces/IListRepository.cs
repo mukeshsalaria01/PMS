@@ -1,6 +1,6 @@
-﻿using PMS.ViewModels;
+﻿using PMS.Web.UI.ViewModels;
 
-namespace PMS.Core.Interfaces
+namespace PMS.Web.UI.Core.Interfaces
 {
     public interface IListRepository
     {

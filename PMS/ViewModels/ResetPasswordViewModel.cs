@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace PMS.ViewModels
+namespace PMS.Web.UI.ViewModels
 {
     public class ResetPasswordViewModel
     {

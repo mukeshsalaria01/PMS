@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PMS.Core.Models
+namespace PMS.Web.UI.Core.Models
 {
     public class Audit
     {

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace PMS.ViewModels
+namespace PMS.Web.UI.ViewModels
 {
     public class RegisterViewModel
     {

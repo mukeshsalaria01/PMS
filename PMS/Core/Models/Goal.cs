@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PMS.Core.Models
+namespace PMS.Web.UI.Core.Models
 {
     public class Goal
     {

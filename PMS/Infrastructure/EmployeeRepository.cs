@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using PMS.Core.Interfaces;
-using PMS.Core.Models;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.Core.Models;
 
 namespace PMS.Infrastructure
 {

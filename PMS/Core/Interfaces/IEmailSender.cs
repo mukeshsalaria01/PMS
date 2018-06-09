@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PMS.Services
+namespace PMS.Web.UI.Core.Interfaces
 {
     public interface IEmailSender
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PMS.Core.Interfaces;
-using PMS.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.Core.Models;
 
 namespace PMS.Infrastructure
 {

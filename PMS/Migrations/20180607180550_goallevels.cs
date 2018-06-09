@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
-using System.Collections.Generic;
 
-namespace PMS.Migrations
+namespace PMS.Web.UI.Migrations
 {
     public partial class goallevels : Migration
     {

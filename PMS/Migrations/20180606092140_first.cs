@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using System;
 
-
-namespace PMS.Migrations
+namespace PMS.Web.UI.Migrations
 {
     public partial class first : Migration
     {

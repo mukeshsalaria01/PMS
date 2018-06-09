@@ -5,8 +5,8 @@ using MimeKit.Text;
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using PMS.Services;
-using PMS.ViewModels;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.ViewModels;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
 namespace PureSmiles.Services

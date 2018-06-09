@@ -1,17 +1,16 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using PMS.Core.Interfaces;
-using PMS.Core.Models;
-using PMS.ViewModels;
-using PureSmiles.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using PMS.Web.UI.Core.Interfaces;
+using PMS.Web.UI.Core.Models;
+using PMS.Web.UI.ViewModels;
 
-namespace PMS.Controllers
+namespace PMS.Web.UI.Controllers
 {
     [Authorize]
     public class GoalController : Controller

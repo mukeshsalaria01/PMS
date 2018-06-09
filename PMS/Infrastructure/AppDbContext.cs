@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Newtonsoft.Json;
-using PMS.Core.Models;
+using PMS.Web.UI.Core.Models;
 
 namespace PMS.Infrastructure
 {

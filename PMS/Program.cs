@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using PMS.Infrastructure;
 
-namespace PMS
+namespace PMS.Web.UI
 {
     public class Program
     {

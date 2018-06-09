@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PMS.Controllers
+namespace PMS.Web.UI.Controllers
 {
     [Authorize]
     public class DashboardController : Controller

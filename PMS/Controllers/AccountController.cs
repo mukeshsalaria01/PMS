@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PMS.ViewModels;
+using PMS.Web.UI.ViewModels;
 
-namespace PMS.Controllers
+namespace PMS.Web.UI.Controllers
 {
     public class AccountController : Controller
     {
